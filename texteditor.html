@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextEditor</title>
+  <script src="https://kit.fontawesome.com/9bc9a400ec.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-500">
+
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg m-8">
+      <div class="mx-auto w-3/4 ">
+      <h1 class="text-5xl text-white font-medium mt-8  py-8 pt-5 text-center">My Text Editor</h1>
+      <div class="grid grid-cols-10 gap-2 mt-2 p-2">
+
+        <button onclick="textBold()"><i class="text-white text-2xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 fa-solid fa-bold"></i></button>
+
+        <button onclick="italicText()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-italic"></i></button>
+
+        <button onclick="underlineText()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-underline"></i></button>
+
+        <button onclick="leftAlign()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-align-left"></i></button>
+
+        <button onclick="centerAlign()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-align-center"></i></button>
+
+        <button onclick="rightAlign()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-align-right"></i></button>
+
+        <button onclick="justifyContent()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-align-justify"></i></button>
+
+        <button onclick="textTransform()"><i class="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded py-1 px-2 text-2xl fa-solid fa-a"></i></button>
+    
+        
+        <input class="rounded px-2" type="number" id="font-size" min="17" max="72" value="16" onchange="changeFontSize()">
+        <input class="rounded min-w-full min-h-full" type="color" id="color-picker" onchange="changeTextColor()">
+        </div>
+
+        <hr class="text-white  mt-2">
+        <div class="mx-auto text-center mt-8 py-5">
+          <textarea class="rounded-lg border-solid border-2 border-indigo-600 p-2" name="" id="editor" cols="100" rows="15" placeholder="Your Text Here..."></textarea>
+          
+      </div>
+      </div>
+    </section>
+
+  <script src="js/textEditor.js"></script>
+</body>
+</html>
